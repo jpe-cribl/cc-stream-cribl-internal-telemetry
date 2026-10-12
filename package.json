@@ -1,18 +1,19 @@
 {
-  "name": "cc-stream-demo-io",
+  "name": "cc-stream-cribl-internal-telemetry",
   "version": "0.0.1",
   "minLogStreamVersion": "4.16.0",
-  "author": "dryvist <hello@dryvist.example>",
-  "description": "Demo passthrough pack — replace name/displayName/description/author when scaffolding from this template.",
-  "displayName": "Cribl Stream Demo Pack",
+  "author": "Cribl Stream Pack Maintainers",
+  "description": "Preserves Cribl internal events and routes native CriblMetrics events with Splunk metadata.",
+  "displayName": "Cribl Internal Telemetry",
   "tags": {
     "streamtags": [
-      "replace",
-      "with",
-      "tags"
+      "cribl",
+      "internal",
+      "telemetry"
     ],
     "dataType": [
-      "logs"
+      "logs",
+      "metrics"
     ]
   },
   "exports": []

@@ -1,0 +1,18 @@
+streamtags: []
+groups: {}
+asyncFuncTimeout: 1000
+description: >-
+  Preserves Cribl internal events and supplies fallback index and sourcetype
+  values based on whether the event came from CriblMetrics or CriblLogs.
+functions:
+  - id: eval
+    filter: "true"
+    disabled: false
+    conf:
+      add:
+        - name: index
+          value: "index || 'cribl_internal'"
+        - name: sourcetype
+          value: >-
+            sourcetype || (__inputId.includes('CriblMetrics')
+            ? 'cribl:metrics' : 'cribl:log')

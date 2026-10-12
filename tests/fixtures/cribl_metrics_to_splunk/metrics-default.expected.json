@@ -1,0 +1,8 @@
+[
+  {
+    "index": "host_metrics",
+    "sourcetype": "cribl:metrics",
+    "_metric": "cribl.total.in_events",
+    "_value": 12
+  }
+]

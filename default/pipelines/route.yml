@@ -2,19 +2,25 @@ id: default
 groups: {}
 comments: []
 routes:
-  # Demo route. Replace with your real routes when scaffolding a new pack.
-  # Validator rules:
-  #   - id and pipeline must be descriptive (no 'main', no 'route1')
-  #   - filter must be a real expression (not literally 'false' / '0')
-  #   - output MUST be __group (not input_id)
-  - id: passthrough
-    name: Demo Passthrough
+  - id: cribl_internal_metrics
+    name: Cribl Internal Metrics
     final: true
     disabled: false
-    pipeline: passthrough
-    description: "Demo route — replace when scaffolding a new pack."
+    pipeline: cribl_metrics_to_splunk
+    description: Process CriblMetrics input events.
     enableOutputExpression: false
     targetContext: group
-    filter: "datatype=='cribl-demo'"
+    filter: "__inputId=='CriblMetrics'"
+    clones: []
+    output: __group
+  - id: cribl_internal_logs
+    name: Cribl Internal Logs
+    final: true
+    disabled: false
+    pipeline: cribl_internal
+    description: Process CriblLogs input events.
+    enableOutputExpression: false
+    targetContext: group
+    filter: "__inputId=='CriblLogs'"
     clones: []
     output: __group

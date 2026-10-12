@@ -7,3 +7,9 @@
 #     created: <unix-timestamp-ms>
 #     size: <bytes>
 #     numEvents: <count>
+cribl_internal_metrics:
+  sampleName: cribl_internal_metrics.json
+  description: Example native CriblMetrics event.
+  created: 1791840000000
+  size: 182
+  numEvents: 1

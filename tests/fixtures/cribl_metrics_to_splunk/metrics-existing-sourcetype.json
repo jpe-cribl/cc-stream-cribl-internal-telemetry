@@ -1,0 +1,11 @@
+[
+  {
+    "__inputId": "CriblMetrics",
+    "host": "example",
+    "source": "cribl:internal",
+    "_time": 1781280000,
+    "sourcetype": "existing:metrics",
+    "_metric": "cribl.total.out_events",
+    "_value": 7
+  }
+]
