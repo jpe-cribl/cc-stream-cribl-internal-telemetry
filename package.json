@@ -1,6 +1,6 @@
 {
   "name": "cc-stream-cribl-internal-telemetry",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "minLogStreamVersion": "4.16.0",
   "author": "Cribl Stream Pack Maintainers",
   "description": "Preserves Cribl internal events and routes native CriblMetrics events with Splunk metadata.",
