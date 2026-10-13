@@ -1,0 +1,11 @@
+[
+  {
+    "__inputId": "CriblMetrics",
+    "host": "example",
+    "source": "cribl:internal",
+    "_time": 1781280000,
+    "index": "prior_index",
+    "_metric": "cribl.total.in_events",
+    "_value": 12
+  }
+]

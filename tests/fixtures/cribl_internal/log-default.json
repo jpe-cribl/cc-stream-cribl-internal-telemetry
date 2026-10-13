@@ -1,0 +1,9 @@
+[
+  {
+    "__inputId": "CriblLogs",
+    "host": "example",
+    "source": "cribl:internal",
+    "_time": 1781280000,
+    "message": "internal log event"
+  }
+]

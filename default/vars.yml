@@ -1,0 +1,5 @@
+splunk_metrics_index:
+  type: string
+  description: Splunk metrics index for native CriblMetrics events.
+  value: "'host_metrics'"
+  tags: cribl,internal,metrics,index

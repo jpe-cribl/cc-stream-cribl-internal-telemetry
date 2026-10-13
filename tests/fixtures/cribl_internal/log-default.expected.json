@@ -1,0 +1,7 @@
+[
+  {
+    "index": "cribl_internal",
+    "sourcetype": "cribl:log",
+    "message": "internal log event"
+  }
+]

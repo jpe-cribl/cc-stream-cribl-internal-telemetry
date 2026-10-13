@@ -1,0 +1,16 @@
+streamtags: []
+groups: {}
+asyncFuncTimeout: 1000
+description: >-
+  Stamps the configurable Splunk metrics index and a fallback Cribl metrics
+  sourcetype on native CriblMetrics events.
+functions:
+  - id: eval
+    filter: "true"
+    disabled: false
+    conf:
+      add:
+        - name: index
+          value: C.vars.splunk_metrics_index
+        - name: sourcetype
+          value: "sourcetype || 'cribl:metrics'"
