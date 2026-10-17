@@ -1,11 +1,12 @@
 # Validator rules (vct-cribl-pack-validator)
 
 Non-negotiable rules per the [validator skill](https://github.com/VisiCore/vct-cribl-pack-validator).
-The CI `validate` job and `scripts/validate-pack-structure.sh` enforce the
+The shared CI `validate` job runs `scripts/validate-pack-structure.sh` from
+`jpe-cribl/.github`, checked out to `.gh-shared/scripts/` in CI, to enforce the
 machine-checkable subset; the rest are conventions to follow.
 
 | Rule | What it means | Enforced by |
-|---|---|---|
+| --- | --- | --- |
 | Pack ID format | `cc-edge-<source>-io` for Edge, `cc-stream-<source>-io` for Stream | CI (warning) |
 | No pipeline named `main` | All pipelines must have descriptive names | `routes.test.ts` |
 | All routes use `output: __group` | Never `input_id` (breaks on source rename) | `routes.test.ts` + CI (warning) |
