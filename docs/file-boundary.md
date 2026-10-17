@@ -11,13 +11,13 @@ Edit only here in the template; updates propagate when packs sync.
   `tests/test-helpers.ts`, `tests/routes.test.ts`, `tests/pipelines.test.ts`
 - `tests/package.json`, `tests/tsconfig.json`, `tests/vitest.config.ts`,
   `tests/pnpm-lock.yaml`
-- `scripts/build-crbl.sh`, `scripts/validate-pack-structure.sh`
+- The shared `build-crbl.sh` and `validate-pack-structure.sh` scripts in
+  `jpe-cribl/.github/scripts/` (run by shared workflows and checked out to
+  `.gh-shared/` in CI)
 - `biome.jsonc`, `.editorconfig`, `lefthook.yml`, `.yamllint.yml`
 - `Makefile`, `docker-compose.yml`
-- `.github/workflows/cribl-pack-test.yml` (reusable)
-- `.github/workflows/cribl-pack-release.yml` (reusable)
-- `.github/workflows/test.yml` (caller — only `pack_type:` value changes per pack)
-- `.github/workflows/release.yml`
+- `.github/workflows/test.yml`, `.github/workflows/release.yml`, and
+  `.github/workflows/e2e.yml` (callers of shared workflows)
 
 If you find yourself wanting to modify any of the above in a pack repo, **stop**.
 Either:
