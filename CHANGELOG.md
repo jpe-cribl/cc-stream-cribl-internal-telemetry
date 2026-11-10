@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/jpe-cribl/cc-stream-cribl-internal-telemetry/compare/v1.0.0...v1.0.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* replace private names with role words ([#26](https://github.com/jpe-cribl/cc-stream-cribl-internal-telemetry/issues/26)) ([81cd1d4](https://github.com/jpe-cribl/cc-stream-cribl-internal-telemetry/commit/81cd1d4e08b6dde53be4488c08ea53ac9f4438c8))
+
 ## 1.0.0 (2026-10-13)
 
 
